@@ -7,31 +7,36 @@ class Program
         // Lab 2
         // Part 1: Operator Practice
         Int a = 10, b = 5, c = 15;
-        Console.Writeline("a > b:" + (a > b));
-        Console.Writeline("a < c:" + (a < c));
+        Console.WriteLine("a > b:" + (a > b));
+        Console.WriteLine("a < c:" + (a < c));
         Console.WriteLine("a > b &&v a > c:" + (a > b && a > c));
-        Console.Writeline("a > b || a > c:" + (a > b || a > c));
+        Console.WriteLine("a > b || a > c:" + (a > b || a > c));
+        // Out put
+        a > b: True
+        a < c: True
+        a > b &&v a > c: False
+        a > b || a > c: True   
         // Part 2: Boolean Logic
         bool isRaining = true;
         bool haveUmbrella = false;
         if (isRaining && !haveUmbrella)
         {
-            Console.Writeline("Take an umbrella!");
+            Console.WriteLine("Take an umbrella!");
         }
         else
         {
-            Console.Writeline("You are to go!");
+            Console.WriteLine("You are to go!");
         }
         // Part 3: Conditional Logic-Movie Ticket Pricing
-        Console.Writeline("Please enter your age:");
+        Console.WriteLine("Please enter your age:");
         int age = int.Parse(Console.ReadLine());
         if (age < 5)
         {
-            Console.Writeline("Ticket is free!");
+            Console.WriteLine("Ticket is free!");
         }
         else if (age >= 5 && age <= 12)
         {
-            Console.Writeline("Child teicket: $5");
+            Console.WriteLine("Child teicket: $5");
         }
         else if (age >= 13 && age <= 64)
         {
@@ -39,37 +44,37 @@ class Program
         }
         else 
         {
-            Console.Writeline("Senior ticket: $6");
+            Console.WriteLine("Senior ticket: $6");
         }
         // Part 4: Switch Statement
-        Console.Writeline("Enter a number (1-7) for the day of the week:");
+        Console.WriteLine("Enter a number (1-7) for the day of the week:");
         int day = int.Parse(Console.Readline());
         switch (dayNumber)
         {
             case 1:
-                ConsoleWritelin("Monday");
+                Console.WriteLine("Monday");
                 break;
             case 2:
-                CosoleWritelin("Tuesday");
+                Cosole.WriteLine("Tuesday");
                 break;
             case 3:
-                ConsoleWritelin("Wednesday");
+                Console.WriteLine("Wednesday");
                 break;
             case 4:
-                ConsoleWriteline("Thursday");
+                Console.WriteLine("Thursday");
                 break;
             case 5:
-                ConsoleWritelin("Friday");
+                Console.WriteLine("Friday");
                 break;
                 
             case 6:
-                ConsoleWritlin("Saturday");
+                Console.WritLine("Saturday");
                 break;
             case 7:
-                ConsoleWritelin("Sunday");
+                Console.WriteLine("Sunday");
                 break;
             default:
-                Console.Writelin("Invalid day!");
+                Console.WriteLine("Invalid day!");
                 break;
 
 
